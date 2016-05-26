@@ -134,7 +134,7 @@ function updateGraph(idx) {
 	$('#lLink' + idx).attr('href', buildUrl(idx, graph, graph.title, config.width * 2, config.height * 2, "render"));
 	$('#gLink' + idx).attr('href', buildUrl(idx, graph, graph.title, 0, 0, "graphlot"));
 	$('#img' + idx).attr('src', buildUrl(idx, graph, graph.title, config.width, config.height, "render"));
-	$('#img' + idx).parent().attr('href', buildUrl(idx, graph, graph.title, config.width, config.height, "render")+"&width=1000&height=600");
+	$('#img' + idx).parent().attr('href', buildUrl(idx, graph, graph.title, config.width, config.height, "render")+"&width=1000&height=600&hideLegend=false");
 	rawTargets[idx] = buildUrl(idx, graph, graph.title, config.width, config.height, "render");
 	$('#source' + idx).val(getGraphSource(graph));
 }
